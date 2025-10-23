@@ -1,0 +1,28 @@
+.product__card {
+  box-shadow: 0px 0px 10px 0px var(--border-shadow);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3px;
+}
+
+.product__card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product__btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color-grey);
+  font-size: 13px;
+  background: var(--bg-color);
+  border-radius: 20px;
+  padding: 10px 0;
+  margin-top: 10px;
+}

@@ -1,0 +1,9 @@
+.products__section {
+  margin-top: 15px;
+}
+
+.products__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(193px, 1fr));
+  gap: 5px;
+}

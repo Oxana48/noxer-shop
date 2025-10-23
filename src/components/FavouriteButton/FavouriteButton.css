@@ -1,0 +1,8 @@
+.favourite__btn {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}

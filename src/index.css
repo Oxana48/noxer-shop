@@ -1,0 +1,49 @@
+@import "./fonts/fonts.css";
+
+:root {
+  --font-family: "Inter", sans-serif;
+  --font-family-badge: "Mulish", sans-serif;
+  --bg-color: #f1f1f1;
+  --color-dark-grey: #666666;
+  --bg-color-dark: #c6c6c64d;
+  --white: #ffffff;
+  --text-color-grey: #292928;
+  --text-color-dark-grey: #2929284d;
+  --text-color-light-grey: #b5b5b5;
+  --text-footer: #8B8B8B;
+  --bg-footer: #8B8B8B1A;
+  --border-shadow: #3030300d;
+  --red: #F24131;
+
+}
+
+body {
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg-color);
+}
+
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.container {
+  padding: 0 5px;
+}

@@ -1,0 +1,11 @@
+.banner__container {
+  background: #f5f5f5;
+  margin-top: 15px;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.banner__image {
+  width: 100%;
+}

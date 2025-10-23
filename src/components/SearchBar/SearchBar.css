@@ -1,0 +1,107 @@
+.search__icon {
+  position: absolute;
+  top: 78px;
+  left: 20px;
+  z-index: 3;
+}
+
+.search__input {
+  position: relative;
+  width: 100%;
+  padding: 11px 11px 11px 47px;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text-color-grey);
+  outline: none;
+  z-index: 2;
+}
+
+.search__dropdown {
+  position: absolute;
+  top: 106px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--bg-color);
+  z-index: 1;
+  overflow-y: auto;
+  border-radius: 0 0 20px 20px;
+  margin-top: -16px;
+  padding-top: 16px;
+  height: 100vh;
+}
+
+.search__popular {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 5px;
+  background: var(--bg-color);
+}
+
+.search__popular-header {
+  font-size: 17px;
+  color: var(--text-color-grey);
+  font-weight: 700;
+}
+
+.search__popular-item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 7px;
+}
+
+.search__popular-name {
+  color: var(--text-color-grey);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 0;
+  border-bottom: solid 1px var(--text-color-light-grey);
+  width: 100%;
+}
+
+.search__results {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  right: 5px;
+  background: var(--white);
+  z-index: 12;
+  border-radius: 0 0 20px 20px;
+}
+
+.search__products {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.search__no {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--white);
+  z-index: 12;
+  border-radius: 0 0 20px 20px;
+  padding: 30px 20px 20px;
+}
+
+.search__go-button {
+  position: absolute;
+  right: 12px;
+  top: 86px;
+  transform: translateY(-50%);
+  background: var(--text-color-grey);
+  color: var(--white);
+  border: none;
+  border-radius: 20px;
+  padding: 9px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 2;
+}
