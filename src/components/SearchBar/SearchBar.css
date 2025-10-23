@@ -1,6 +1,14 @@
+.search__container {
+  position: relative;
+}
+
+.search__bar {
+  position: relative;
+}
+
 .search__icon {
   position: absolute;
-  top: 78px;
+  top: 30%;
   left: 20px;
   z-index: 3;
 }
@@ -20,7 +28,7 @@
 
 .search__dropdown {
   position: absolute;
-  top: 106px;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -28,8 +36,8 @@
   z-index: 1;
   overflow-y: auto;
   border-radius: 0 0 20px 20px;
-  margin-top: -16px;
-  padding-top: 16px;
+  margin-top: -10px;
+  padding-top: 10px;
   height: 100vh;
 }
 
@@ -64,9 +72,9 @@
 
 .search__results {
   position: absolute;
-  top: 0;
-  left: 5px;
-  right: 5px;
+  top: 35px;
+  left: 0;
+  right: 0;
   background: var(--white);
   z-index: 12;
   border-radius: 0 0 20px 20px;
@@ -93,7 +101,7 @@
 .search__go-button {
   position: absolute;
   right: 12px;
-  top: 86px;
+  top: 22px;
   transform: translateY(-50%);
   background: var(--text-color-grey);
   color: var(--white);
