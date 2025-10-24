@@ -9,7 +9,9 @@ const MainPage = () => {
   if (loading) {
     return (
       <div className="app">
-        <div className="loading">Загрузка...</div>
+        <div className="loading">
+          <div className="loading__spinner"></div>
+        </div>
       </div>
     );
   }

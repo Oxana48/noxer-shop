@@ -8,6 +8,28 @@
   gap: 5px;
 }
 
+.products__loading {
+  text-align: center;
+  padding: 20px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.loading__spinner {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 @media (min-width: 768px) {
   .products__grid {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
