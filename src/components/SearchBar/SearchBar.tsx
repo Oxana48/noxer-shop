@@ -29,32 +29,29 @@ const SearchBar = ({
 }: SearchBarProps) => {
   const showPopularSearches = isSearchFocused && searchTerm.length === 0;
   const showSearchResults = isSearchFocused && searchTerm.length > 0;
-  const showGoButton = isSearchFocused && searchTerm.length > 0 && filteredProducts.length > 0;
+  const showGoButton =
+    isSearchFocused && searchTerm.length > 0 && filteredProducts.length > 0;
 
   return (
     <div className="search__container">
       <SearchSvg className="search__icon" />
-      <div className="search__bar">
-        <input
-          ref={searchInputRef}
-          type="text"
-          name="search"
-          placeholder="Найти товары"
-          value={searchTerm}
-          onChange={(e) => onSearchChange(e.target.value)}
-          onFocus={onSearchFocus}
-          onBlur={onSearchBlur}
-          className="search__input"
-        />
-          {showGoButton && (
-            <button 
-              type="button" 
-              className="search__go-button"
-            >
-              Перейти
-            </button>
-          )}
-      </div>
+
+      <input
+        ref={searchInputRef}
+        type="text"
+        name="search"
+        placeholder="Найти товары"
+        value={searchTerm}
+        onChange={(e) => onSearchChange(e.target.value)}
+        onFocus={onSearchFocus}
+        onBlur={onSearchBlur}
+        className="search__input"
+      />
+      {showGoButton && (
+        <button type="button" className="search__go-button">
+          Перейти
+        </button>
+      )}
 
       {isSearchFocused && (
         <div className="search__dropdown">
@@ -64,7 +61,7 @@ const SearchBar = ({
               <div className="search__popular-list">
                 {popularSearches.map((term, index) => (
                   <div className="search__popular-item">
-                    <SearchSvg width={10} height={10}/>
+                    <SearchSvg width={10} height={10} />
                     <span
                       key={index}
                       onClick={() => onQuickSearch(term)}
