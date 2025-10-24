@@ -12,8 +12,8 @@ export const Categories = ({ categories }: CategoriesProps) => {
       (category) =>
         category.parent_category_id === null &&
         category.Category_Image &&
-        category.Category_Image.trim() !== "" && 
-        !category.Category_Image.includes("google.com/Portrait") && 
+        category.Category_Image.trim() !== "" &&
+        !category.Category_Image.includes("google.com/Portrait") &&
         /^[а-яё][а-яё0-9\s\-]*$/i.test(category.Category_Name)
     )
     .slice(0, 12);
@@ -24,23 +24,21 @@ export const Categories = ({ categories }: CategoriesProps) => {
 
   return (
     <section className="categories">
-      <div className="categories__wrapper">
-        <div className="categories__info">
-          {mainCategories.map((category) => (
-            <div key={category.Category_ID} className="categories__card">
-              <div className="categories__image">
-                <img
-                  src={category.Category_Image}
-                  alt={category.Category_Name}
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = placeholder;
-                  }}
-                />
-              </div>
-              <span className="categories__name">{category.Category_Name}</span>
+      <div className="categories__info">
+        {mainCategories.map((category) => (
+          <div key={category.Category_ID} className="categories__card">
+            <div className="categories__image">
+              <img
+                src={category.Category_Image}
+                alt={category.Category_Name}
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = placeholder;
+                }}
+              />
             </div>
-          ))}
-        </div>
+            <span className="categories__name">{category.Category_Name}</span>
+          </div>
+        ))}
       </div>
     </section>
   );
