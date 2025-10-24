@@ -34,8 +34,6 @@
   margin-top: -20px;
   padding-top: 20px;
   height: 100vh;
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
 }
 
 .search__popular {
